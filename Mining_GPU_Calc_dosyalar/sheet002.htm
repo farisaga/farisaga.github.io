@@ -1,0 +1,794 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../Mining_GPU_Calc.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{margin:.2in .12in .16in .08in;
+	mso-header-margin:.16in;
+	mso-footer-margin:.12in;
+	mso-page-orientation:landscape;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(1);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../Mining_GPU_Calc.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1847 style='border-collapse:
+ collapse;table-layout:fixed;width:1391pt'>
+ <col width=36 style='mso-width-source:userset;mso-width-alt:1316;width:27pt'>
+ <col width=49 style='mso-width-source:userset;mso-width-alt:1792;width:37pt'>
+ <col width=63 style='mso-width-source:userset;mso-width-alt:2304;width:47pt'>
+ <col width=30 span=2 style='mso-width-source:userset;mso-width-alt:1097;
+ width:23pt'>
+ <col width=60 style='mso-width-source:userset;mso-width-alt:2194;width:45pt'>
+ <col width=14 span=2 style='mso-width-source:userset;mso-width-alt:512;
+ width:11pt'>
+ <col width=67 style='mso-width-source:userset;mso-width-alt:2450;width:50pt'>
+ <col width=20 style='mso-width-source:userset;mso-width-alt:731;width:15pt'>
+ <col width=19 style='mso-width-source:userset;mso-width-alt:694;width:14pt'>
+ <col width=49 style='mso-width-source:userset;mso-width-alt:1792;width:37pt'>
+ <col width=63 style='mso-width-source:userset;mso-width-alt:2304;width:47pt'>
+ <col width=30 span=2 style='mso-width-source:userset;mso-width-alt:1097;
+ width:23pt'>
+ <col width=63 style='mso-width-source:userset;mso-width-alt:2304;width:47pt'>
+ <col width=14 span=2 style='mso-width-source:userset;mso-width-alt:512;
+ width:11pt'>
+ <col width=67 style='mso-width-source:userset;mso-width-alt:2450;width:50pt'>
+ <col width=20 style='mso-width-source:userset;mso-width-alt:731;width:15pt'>
+ <col width=19 style='mso-width-source:userset;mso-width-alt:694;width:14pt'>
+ <col width=26 style='mso-width-source:userset;mso-width-alt:950;width:20pt'>
+ <col width=80 style='mso-width-source:userset;mso-width-alt:2925;width:60pt'>
+ <col width=70 style='mso-width-source:userset;mso-width-alt:2560;width:53pt'>
+ <col width=30 style='mso-width-source:userset;mso-width-alt:1097;width:23pt'>
+ <col width=62 style='mso-width-source:userset;mso-width-alt:2267;width:47pt'>
+ <col width=80 style='mso-width-source:userset;mso-width-alt:2925;width:60pt'>
+ <col width=14 style='mso-width-source:userset;mso-width-alt:512;width:11pt'>
+ <col width=87 style='mso-width-source:userset;mso-width-alt:3181;width:65pt'>
+ <col width=67 style='mso-width-source:userset;mso-width-alt:2450;width:50pt'>
+ <col width=20 style='mso-width-source:userset;mso-width-alt:731;width:15pt'>
+ <col width=19 style='mso-width-source:userset;mso-width-alt:694;width:14pt'>
+ <col width=80 style='mso-width-source:userset;mso-width-alt:2925;width:60pt'>
+ <col width=70 style='mso-width-source:userset;mso-width-alt:2560;width:53pt'>
+ <col width=30 style='mso-width-source:userset;mso-width-alt:1097;width:23pt'>
+ <col width=73 style='mso-width-source:userset;mso-width-alt:2669;width:55pt'>
+ <col width=80 style='mso-width-source:userset;mso-width-alt:2925;width:60pt'>
+ <col width=14 style='mso-width-source:userset;mso-width-alt:512;width:11pt'>
+ <col width=87 style='mso-width-source:userset;mso-width-alt:3181;width:65pt'>
+ <col width=67 style='mso-width-source:userset;mso-width-alt:2450;width:50pt'>
+ <col width=20 style='mso-width-source:userset;mso-width-alt:731;width:15pt'>
+ <tr height=21 style='height:15.75pt'>
+  <td rowspan=4 height=81 class=xl98 width=36 style='border-bottom:.5pt solid black;
+  height:60.75pt;width:27pt'>SİTE-1</td>
+  <td colspan=9 class=xl101 width=347 style='border-right:.5pt solid black;
+  border-left:none;width:262pt'>Ethereum (1 adet GPU ile…)</td>
+  <td class=xl96 width=19 style='width:14pt'>&nbsp;</td>
+  <td colspan=9 class=xl101 width=350 style='border-right:.5pt solid black;
+  width:264pt'>Ethereum (8 adet GPU ile…)</td>
+  <td class=xl96 width=19 style='width:14pt'>&nbsp;</td>
+  <td rowspan=4 class=xl104 width=26 style='border-bottom:.5pt solid black;
+  width:20pt'>EN DÜŞÜK</td>
+  <td colspan=9 class=xl107 width=510 style='border-right:.5pt solid black;
+  border-left:none;width:384pt'>Ethereum (1 adet GPU ile…)</td>
+  <td class=xl96 width=19 style='width:14pt'>&nbsp;</td>
+  <td colspan=9 class=xl107 width=521 style='border-right:.5pt solid black;
+  width:392pt'>Ethereum (8 adet GPU ile…)</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>24h</td>
+  <td align=right>0,02222</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>40,37</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>336,73</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>24h</td>
+  <td align=right>0,02222</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>322,96</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>2693,81</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl88 style='border-left:none'>24h</td>
+  <td class=xl89 align=right>0,01109</td>
+  <td class=xl89>ETH</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl89 align=right>16,68</td>
+  <td class=xl89>$</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl90 align=right>139,13</td>
+  <td class=xl91>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl88>24h</td>
+  <td class=xl89 align=right>0,02222</td>
+  <td class=xl89>ETH</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl89 align=right>133,44</td>
+  <td class=xl89>$</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl90 align=right>1113,02</td>
+  <td class=xl91>TL</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>30days</td>
+  <td align=right>0,6666</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>1211,10</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>10101,79</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>30days</td>
+  <td align=right>0,6666</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>9688,8</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>80814,28</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl88 style='border-left:none'>30days</td>
+  <td class=xl89 align=right>0,3327</td>
+  <td class=xl89>ETH</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl90 align=right>500,40</td>
+  <td class=xl89>$</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl90 align=right>4173,84</td>
+  <td class=xl91>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl88>30days</td>
+  <td class=xl89 align=right>0,6666</td>
+  <td class=xl89>ETH</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl89 align=right>4003,2</td>
+  <td class=xl89>$</td>
+  <td class=xl89>&nbsp;</td>
+  <td class=xl90 align=right>33390,69</td>
+  <td class=xl91>TL</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt;border-left:none'>1year</td>
+  <td class=xl68 align=right>8,1103</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>14735,05</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>122905,05</td>
+  <td class=xl69>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl67>1year</td>
+  <td class=xl68 align=right>8,1103</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68 align=right>117880,4</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>983240,42</td>
+  <td class=xl69>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl92 style='border-left:none'>1year</td>
+  <td class=xl93 align=right>4,04785</td>
+  <td class=xl93>ETH</td>
+  <td class=xl93>&nbsp;</td>
+  <td class=xl94 align=right>6088,20</td>
+  <td class=xl93>$</td>
+  <td class=xl93>&nbsp;</td>
+  <td class=xl94 align=right>50781,68</td>
+  <td class=xl95>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl92>1year</td>
+  <td class=xl93 align=right>8,1103</td>
+  <td class=xl93>ETH</td>
+  <td class=xl93>&nbsp;</td>
+  <td class=xl93 align=right>48705,6</td>
+  <td class=xl93>$</td>
+  <td class=xl93>&nbsp;</td>
+  <td class=xl94 align=right>406253,41</td>
+  <td class=xl95>TL</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=10 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 style='mso-ignore:colspan'></td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=10 style='mso-ignore:colspan'></td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td rowspan=4 height=81 class=xl98 style='border-bottom:.5pt solid black;
+  height:60.75pt'>SİTE-2</td>
+  <td colspan=9 class=xl101 style='border-right:.5pt solid black;border-left:
+  none'>Ethereum (1 adet GPU ile…)</td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 class=xl101 style='border-right:.5pt solid black'>Ethereum (8
+  adet GPU ile…)</td>
+  <td class=xl96>&nbsp;</td>
+  <td rowspan=4 class=xl110 style='border-bottom:.5pt solid black'>ORTALAMA</td>
+  <td colspan=9 class=xl113 style='border-right:.5pt solid black;border-left:
+  none'>Ethereum (1 adet GPU ile…)</td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 class=xl113 style='border-right:.5pt solid black'>Ethereum (8
+  adet GPU ile…)</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>24h</td>
+  <td align=right>0,01109</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>16,68</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>139,13</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>24h</td>
+  <td align=right>0,08872</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>133,44</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>1113,02</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl80 style='border-left:none'>24h</td>
+  <td class=xl81 align=right>0,0199196</td>
+  <td class=xl81>ETH</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl82 align=right>34,70</td>
+  <td class=xl81>$</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl82 align=right>297,38</td>
+  <td class=xl83>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl80>24h</td>
+  <td class=xl81 align=right>0,1282488</td>
+  <td class=xl81>ETH</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl82 align=right>277,62</td>
+  <td class=xl81>$</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl82 align=right>2379,08</td>
+  <td class=xl83>TL</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>30days</td>
+  <td align=right>0,3327</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>500,40</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>4173,84</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>30days</td>
+  <td align=right>2,6616</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>4003,2</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>33390,69</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl80 style='border-left:none'>30days</td>
+  <td class=xl81 align=right>0,597588</td>
+  <td class=xl81>ETH</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl82 align=right>1041,06</td>
+  <td class=xl81>$</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl82 align=right>8921,53</td>
+  <td class=xl83>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl80>30days</td>
+  <td class=xl81 align=right>3,847464</td>
+  <td class=xl81>ETH</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl81 align=right>8328,48</td>
+  <td class=xl81>$</td>
+  <td class=xl81>&nbsp;</td>
+  <td class=xl82 align=right>71372,27</td>
+  <td class=xl83>TL</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt;border-left:none'>1year</td>
+  <td class=xl68 align=right>4,04785</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>6088,20</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>50781,68</td>
+  <td class=xl69>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl67>1year</td>
+  <td class=xl68 align=right>32,3828</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68 align=right>48705,6</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>406253,41</td>
+  <td class=xl69>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl84 style='border-left:none'>1year</td>
+  <td class=xl85 align=right>7,270654</td>
+  <td class=xl85>ETH</td>
+  <td class=xl85>&nbsp;</td>
+  <td class=xl86 align=right>12666,23</td>
+  <td class=xl85>$</td>
+  <td class=xl85>&nbsp;</td>
+  <td class=xl86 align=right>108545,33</td>
+  <td class=xl87>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl84>1year</td>
+  <td class=xl85 align=right>46,810812</td>
+  <td class=xl85>ETH</td>
+  <td class=xl85>&nbsp;</td>
+  <td class=xl85 align=right>101329,84</td>
+  <td class=xl85>$</td>
+  <td class=xl85>&nbsp;</td>
+  <td class=xl86 align=right>868362,60</td>
+  <td class=xl87>TL</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=10 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 style='mso-ignore:colspan'></td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=10 style='mso-ignore:colspan'></td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td rowspan=4 height=81 class=xl98 style='border-bottom:.5pt solid black;
+  height:60.75pt'>SİTE-3</td>
+  <td colspan=9 class=xl101 style='border-right:.5pt solid black;border-left:
+  none'>Ethereum (1 adet GPU ile…)</td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 class=xl101 style='border-right:.5pt solid black'>Ethereum (8
+  adet GPU ile…)</td>
+  <td class=xl96>&nbsp;</td>
+  <td rowspan=4 class=xl116 style='border-bottom:.5pt solid black'>EN YÜKSEK</td>
+  <td colspan=9 class=xl119 style='border-right:.5pt solid black;border-left:
+  none'>Ethereum (1 adet GPU ile…)</td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 class=xl119 style='border-right:.5pt solid black'>Ethereum (8
+  adet GPU ile…)</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>24h</td>
+  <td align=right>0,020888</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>37,75</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>314,87</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>24h</td>
+  <td align=right>0,167104</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>302</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>2518,98</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl72 style='border-left:none'>24h</td>
+  <td class=xl73 align=right>0,0231</td>
+  <td class=xl73>ETH</td>
+  <td class=xl73>&nbsp;</td>
+  <td class=xl74 align=right>40,41</td>
+  <td class=xl73>$</td>
+  <td class=xl73>&nbsp;</td>
+  <td class=xl74 align=right>337,06</td>
+  <td class=xl75>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl72>24h</td>
+  <td class=xl73 align=right>0,1848</td>
+  <td class=xl73>ETH</td>
+  <td class=xl73>&nbsp;</td>
+  <td class=xl74 align=right>323,28</td>
+  <td class=xl73>$</td>
+  <td class=xl73>&nbsp;</td>
+  <td class=xl74 align=right>2696,48</td>
+  <td class=xl75>TL</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>30days</td>
+  <td align=right>0,62664</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>1132,50</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>9446,18</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>30days</td>
+  <td align=right>5,01312</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>9060</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>75569,46</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl72 style='border-left:none'>30days</td>
+  <td class=xl73 align=right>0,693</td>
+  <td class=xl73>ETH</td>
+  <td class=xl73>&nbsp;</td>
+  <td class=xl74 align=right>1212,30</td>
+  <td class=xl73>$</td>
+  <td class=xl73>&nbsp;</td>
+  <td class=xl74 align=right>10111,79</td>
+  <td class=xl75>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl72>30days</td>
+  <td class=xl73 align=right>5,544</td>
+  <td class=xl73>ETH</td>
+  <td class=xl73>&nbsp;</td>
+  <td class=xl73 align=right>9698,4</td>
+  <td class=xl73>$</td>
+  <td class=xl73>&nbsp;</td>
+  <td class=xl74 align=right>80894,35</td>
+  <td class=xl75>TL</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt;border-left:none'>1year</td>
+  <td class=xl68 align=right>7,62412</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>13778,75</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>114928,55</td>
+  <td class=xl69>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl67>1year</td>
+  <td class=xl68 align=right>60,99296</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68 align=right>110230</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>919428,43</td>
+  <td class=xl69>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl76 style='border-left:none'>1year</td>
+  <td class=xl77 align=right>8,4315</td>
+  <td class=xl77>ETH</td>
+  <td class=xl77>&nbsp;</td>
+  <td class=xl78 align=right>14749,65</td>
+  <td class=xl77>$</td>
+  <td class=xl77>&nbsp;</td>
+  <td class=xl78 align=right>123026,83</td>
+  <td class=xl79>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl76>1year</td>
+  <td class=xl77 align=right>67,452</td>
+  <td class=xl77>ETH</td>
+  <td class=xl77>&nbsp;</td>
+  <td class=xl77 align=right>117997,2</td>
+  <td class=xl77>$</td>
+  <td class=xl77>&nbsp;</td>
+  <td class=xl78 align=right>984214,65</td>
+  <td class=xl79>TL</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=10 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td rowspan=4 height=81 class=xl98 style='border-bottom:.5pt solid black;
+  height:60.75pt'>SİTE-4</td>
+  <td colspan=9 class=xl101 style='border-right:.5pt solid black;border-left:
+  none'>Ethereum (1 adet GPU ile…)</td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 class=xl101 style='border-right:.5pt solid black'>Ethereum (8
+  adet GPU ile…)</td>
+  <td colspan=21 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>24h</td>
+  <td align=right>0,0231</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>38,30</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>319,46</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>24h</td>
+  <td align=right>0,1848</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>306,4</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>2555,68</td>
+  <td class=xl66>TL</td>
+  <td colspan=21 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>30days</td>
+  <td align=right>0,693</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>1149,00</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>9583,81</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>30days</td>
+  <td align=right>5,544</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>9192</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>76670,47</td>
+  <td class=xl66>TL</td>
+  <td colspan=21 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt;border-left:none'>1year</td>
+  <td class=xl68 align=right>8,4315</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>13979,50</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>116603,01</td>
+  <td class=xl69>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl67>1year</td>
+  <td class=xl68 align=right>67,452</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68 align=right>111836</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>932824,08</td>
+  <td class=xl69>TL</td>
+  <td colspan=21 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 colspan=10 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=15 style='mso-ignore:colspan'></td>
+  <td>TEK KART</td>
+  <td colspan=9 style='mso-ignore:colspan'></td>
+  <td>8 KART</td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=21 style='height:15.75pt'>
+  <td rowspan=4 height=81 class=xl98 style='border-bottom:.5pt solid black;
+  height:60.75pt'>SİTE-5</td>
+  <td colspan=9 class=xl101 style='border-right:.5pt solid black;border-left:
+  none'>Ethereum (1 adet GPU ile…)</td>
+  <td class=xl96>&nbsp;</td>
+  <td colspan=9 class=xl101 style='border-right:.5pt solid black'>Ethereum (8
+  adet GPU ile…)</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+  <td>1 gün</td>
+  <td>1 ay</td>
+  <td></td>
+  <td>1 yıl</td>
+  <td colspan=6 style='mso-ignore:colspan'></td>
+  <td>1 gün</td>
+  <td>1 ay</td>
+  <td></td>
+  <td>1 yıl</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>24h</td>
+  <td align=right>0,0223</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>40,41</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>337,06</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>24h</td>
+  <td align=right>0,1784</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>323,28</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>2696,48</td>
+  <td class=xl66>TL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td>MİNİMUM</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl97 align=right>139,13 TL</td>
+  <td class=xl97 align=right>4.173,84 TL</td>
+  <td class=xl97></td>
+  <td class=xl97 align=right>50.781,68 TL</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+  <td>MİNİMUM</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl97 align=right>1.113,02 TL</td>
+  <td class=xl97 align=right>33.390,69 TL</td>
+  <td class=xl97></td>
+  <td class=xl97 align=right>406.253,41 TL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt;border-left:none'>30days</td>
+  <td align=right>0,669</td>
+  <td>ETH</td>
+  <td></td>
+  <td class=xl70 align=right>1212,30</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>10111,79</td>
+  <td class=xl66>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl65>30days</td>
+  <td align=right>5,352</td>
+  <td>ETH</td>
+  <td></td>
+  <td align=right>9698,4</td>
+  <td>$</td>
+  <td></td>
+  <td class=xl70 align=right>80894,35</td>
+  <td class=xl66>TL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td>ORTALAMA</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl97 align=right>297,38 TL</td>
+  <td class=xl97 align=right>8.921,53 TL</td>
+  <td class=xl97></td>
+  <td class=xl97 align=right>108.545,33 TL</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+  <td>ORTALAMA</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl97 align=right>2.379,08 TL</td>
+  <td class=xl97 align=right>71.372,27 TL</td>
+  <td class=xl97></td>
+  <td class=xl97 align=right>868.362,6 TL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt;border-left:none'>1year</td>
+  <td class=xl68 align=right>8,1395</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>14749,65</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>123026,83</td>
+  <td class=xl69>TL</td>
+  <td class=xl96>&nbsp;</td>
+  <td class=xl67>1year</td>
+  <td class=xl68 align=right>65,116</td>
+  <td class=xl68>ETH</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl68 align=right>117997,2</td>
+  <td class=xl68>$</td>
+  <td class=xl68>&nbsp;</td>
+  <td class=xl71 align=right>984214,65</td>
+  <td class=xl69>TL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td>MAKSİMUM</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl97 align=right>337,06 TL</td>
+  <td class=xl97 align=right>10.111,79 TL</td>
+  <td class=xl97></td>
+  <td class=xl97 align=right>123.026,83 TL</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+  <td>MAKSİMUM</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl97 align=right>2.696,48 TL</td>
+  <td class=xl97 align=right>80.894,35 TL</td>
+  <td class=xl97></td>
+  <td class=xl97 align=right>984.214,65 TL</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=36 style='width:27pt'></td>
+  <td width=49 style='width:37pt'></td>
+  <td width=63 style='width:47pt'></td>
+  <td width=30 style='width:23pt'></td>
+  <td width=30 style='width:23pt'></td>
+  <td width=60 style='width:45pt'></td>
+  <td width=14 style='width:11pt'></td>
+  <td width=14 style='width:11pt'></td>
+  <td width=67 style='width:50pt'></td>
+  <td width=20 style='width:15pt'></td>
+  <td width=19 style='width:14pt'></td>
+  <td width=49 style='width:37pt'></td>
+  <td width=63 style='width:47pt'></td>
+  <td width=30 style='width:23pt'></td>
+  <td width=30 style='width:23pt'></td>
+  <td width=63 style='width:47pt'></td>
+  <td width=14 style='width:11pt'></td>
+  <td width=14 style='width:11pt'></td>
+  <td width=67 style='width:50pt'></td>
+  <td width=20 style='width:15pt'></td>
+  <td width=19 style='width:14pt'></td>
+  <td width=26 style='width:20pt'></td>
+  <td width=80 style='width:60pt'></td>
+  <td width=70 style='width:53pt'></td>
+  <td width=30 style='width:23pt'></td>
+  <td width=62 style='width:47pt'></td>
+  <td width=80 style='width:60pt'></td>
+  <td width=14 style='width:11pt'></td>
+  <td width=87 style='width:65pt'></td>
+  <td width=67 style='width:50pt'></td>
+  <td width=20 style='width:15pt'></td>
+  <td width=19 style='width:14pt'></td>
+  <td width=80 style='width:60pt'></td>
+  <td width=70 style='width:53pt'></td>
+  <td width=30 style='width:23pt'></td>
+  <td width=73 style='width:55pt'></td>
+  <td width=80 style='width:60pt'></td>
+  <td width=14 style='width:11pt'></td>
+  <td width=87 style='width:65pt'></td>
+  <td width=67 style='width:50pt'></td>
+  <td width=20 style='width:15pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
